@@ -1,0 +1,29 @@
+*{
+	color: #ffffff;
+}
+.mat-card{
+	background-color: #ffffff;
+}
+.iconos-social{
+	height: 35px;
+	width: auto;
+}
+#info-personal ul{
+	list-style: none;
+	li {
+		span {
+			padding-left: 10px;
+		}
+	}
+}
+.mat-card{
+	background-image: url('../../../assets/images/f12.jpg');
+	
+}
+
+@media (max-width: 400px) {
+	.mat-card{
+		background-color: #ffffff;
+		height: 98vh;
+	}
+}

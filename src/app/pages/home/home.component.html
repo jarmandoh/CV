@@ -1,0 +1,234 @@
+<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" class="contenedor" fxLayoutAlign="space-around stretch">
+	<div fxFlex="20" fxLayoutAlign="space-around stretch" class="animate__animated animate__headShake animate__delay-1s">
+		<mat-card fxLayout="column"  fxLayoutAlign="space-around stretch">
+			<mat-card-header>
+				<!-- <div mat-card-avatar class="example-header-image"></div> -->
+				<mat-card-title>Janier Hernandez</mat-card-title>
+				<mat-card-subtitle>Desarrollador de software</mat-card-subtitle>
+			</mat-card-header>
+			<img mat-card-image src="../../../assets/images/avatar.jpg" alt="Photo of a Shiba Inu">
+			<mat-card-content>
+				<div *ngIf="frase; else FraseDefecto">
+					<cite>
+						"{{frase.phrase}}"
+					</cite>
+					<p fxLayoutAlign="end">
+						-{{frase.author}}-
+					</p>
+				</div>
+				<ng-template #FraseDefecto>
+					<cite>
+						<p>"Cuando amas lo que haces, se nota...</p>
+						<p>...cuando no amas lo que haces, se nota aún mas" </p>
+					</cite>
+					<p fxLayoutAlign="end">
+						-Steve Jobs-
+					</p>
+				</ng-template>
+			</mat-card-content>
+			<mat-card-actions>
+				<div fxLayoutGap="5px" fxLayout="row wrap" fxLayoutAlign="center center">
+					<a href="https://github.com/jarmandoh" target="_blank">
+						<img class="iconos-social" src="../../../assets/images/social-media-logos/github.png" alt="">
+					</a>
+					<a href="https://stackoverflow.com/users/10913446/janier-hernandez" target="_blank">
+						<img class="iconos-social" src="../../../assets/images/social-media-logos/stack-overflow.png" alt="">
+					</a>
+					<a href="https://www.facebook.com/janierh" target="_blank">
+						<img class="iconos-social" src="../../../assets/images/social-media-logos/facebook.png" alt="">
+					</a>
+					<a href="https://www.instagram.com/jherohdz/" target="_blank">
+						<img class="iconos-social" src="../../../assets/images/social-media-logos/instagram.png" alt="">
+					</a>
+					<a href="https://www.linkedin.com/in/janier-hernandez-8696b871/" target="_blank">
+						<img class="iconos-social" src="../../../assets/images/social-media-logos/linkedin.png" alt="">
+					</a>
+					<a href="https://www.twitch.tv/jherodru" target="_blank">
+						<img class="iconos-social" src="../../../assets/images/social-media-logos/twitch.png" alt="">
+					</a>
+					<a href="https://twitter.com/janierhernandez" target="_blank">
+						<img class="iconos-social" src="../../../assets/images/social-media-logos/twitter.png" alt="">
+					</a>
+					<a href="https://www.youtube.com/channel/UCSvCBeGOJ-1T8FxOc-8ov_w" target="_blank">
+						<img class="iconos-social" src="../../../assets/images/social-media-logos/youtube.png" alt="">
+					</a>
+					<a href="" target="_blank">
+						<img class="iconos-social" src="../../../assets/images/social-media-logos/whatsapp.png" alt="">
+					</a>
+				</div>				
+			</mat-card-actions>
+		</mat-card>
+	</div>
+	<div fxFlex="40" class="mat-card p-2 animate__animated animate__headShake animate__delay-2s">
+		<div id="info-personal">
+			<h2>Información personal</h2>
+			<ul>
+				<li>
+					<mat-icon>place</mat-icon>
+					<span>Colombia / Bogotá D.C</span>
+				</li>
+				<li>
+					<mat-icon>email</mat-icon>
+					<span>janier007gmail.com</span>
+				</li>
+				<li>
+					<mat-icon>smartphone</mat-icon>
+					<span>+57 3163255744</span>
+				</li>
+				
+			</ul>
+		</div>
+		<div id="habilidades">
+			<h2>Habilidades</h2>
+			<ul>
+				<li>Angular 10+</li>
+				<li>Sequelize</li>
+				<li>Postgresql</li>
+				<li>Javascript / Typescript</li>
+				<li>Node.js</li>
+				<li>Express.js</li>
+				<li>Php</li>
+				<li>Html</li>
+				<li>Css</li>
+				<li>API/Rest</li>
+				<li>Aws</li>
+			</ul>
+		</div>
+		<div id="exp-laboral">
+			<h2>Experiencia laboral</h2>
+			<ul>
+				<li>
+					<div fxLayout="column">
+						<div fxLayout="column">
+							<strong>Empresa / Jefe: </strong>
+							<span>Jorge Erickson Trujillo Florez</span>
+							<span>Esp. Gestión de Proyectos Informáticos</span>
+						</div>
+						<div fxLayout="column">
+							<strong>Cargo: </strong>
+							<span>Programador Web Junior, manejo Wordpress, JavaScript, PHP, HTML5 y CSS3</span>
+						</div>
+						<div fxLayout="column">
+							<strong>Tiempo laborado: </strong>
+							<span>Desde: 01-05-2015 Hasta: 30-09-2015</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div fxLayout="column">
+						<div fxLayout="column">
+							<strong>Empresa / Jefe: </strong>
+							<span>Mr. Valdemar</span>
+						</div>
+						<div fxLayout="column">
+							<strong>Cargo: </strong>
+							<span>Programador Web, manejo de JavaScript, PHP, HTML5 y CSS3, AngularJS, Android Studio</span>
+						</div>
+						<div fxLayout="column">
+							<strong>Tiempo laborado: </strong>
+							<span>Desde: 11-11-2015 Hasta: 28-10-2018</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div fxLayout="column">
+						<div fxLayout="column">
+							<strong>Empresa / Jefe: </strong>
+							<span>Internacional de eléctricos</span>
+						</div>
+						<div fxLayout="column">
+							<strong>Cargo: </strong>
+							<span>Ingeniero de desarrollo</span>
+						</div>
+						<div fxLayout="column">
+							<strong>Tiempo laborado: </strong>
+							<span>Desde: 20-11-2018 Hasta: Actual</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div fxFlex="40" class="mat-card p-2 animate__animated animate__headShake animate__delay-3s">
+		<div id="formacion">
+			<h2>Formación</h2>
+			<ul>
+				<li>
+					<div fxLayout="column">
+						<div fxLayout="column">
+							<strong>Profesional: </strong>
+							<span>Tecnólogo en Administración de Redes y Sistemas Teleinformáticos</span>
+							<span>ISER</span>
+							<span>Pamplona  - Norte de Santander 2015</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div fxLayout="column">
+						<div fxLayout="column">
+							<strong>Secundaria: </strong>
+							<span>Bachiller Académico</span>
+							<span>Seminario Menor San José</span>
+							<span>Támara – Casanare 2002</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div fxLayout="column">
+						<div fxLayout="column">
+							<strong>Primaria: </strong>
+							<span>Concentración Horacio Perdomo</span>
+							<span>Támara – Casanare 1996</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="actualizacion">
+			<h2>Actualización y formación</h2>
+			<ul>
+				<li>
+					<div fxLayout="column">
+						<div fxLayout="column">
+							<strong>Lugar / plataforma: </strong>
+							<span>UDEMY</span>
+							<ul>
+								<li>Angular 13 - La Guia Completa + 15 Proyectos</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div fxLayout="column">
+						<div fxLayout="column">
+							<strong>Lugar / plataforma: </strong>
+							<span>UBITS</span>
+							<ul>
+								<li>Phyton desde cero</li>
+								
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div fxLayout="column">
+						<div fxLayout="column">
+							<strong>Lugar / plataforma: </strong>
+							<span>SENA</span>
+							<ul>
+								<li>D{{'ESARROLLO DE APLICACIONES CON INTERFAZ GRÁFICA, MANEJO DE EVENTOS, CLASES Y OBJETOS - JAVA' | lowercase}}</li>
+								<li>D{{'ESARROLLO DE APLICACIONES CON MANEJO DE DATOS EN LA MEMORIA- JAVA' | lowercase}}</li>
+								<li>V{{'ARIABLES Y ESTRUCTURAS DE CONTROL EN LA PROGRAMACIÓN ORIENTADA A OBJETOS: JAVA' | lowercase}}</li>
+								
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div fxLayoutAlign="end end">
+			<small>última actualización: 2022-07-15</small>
+		</div>
+	</div>
+</div>
+
